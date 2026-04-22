@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.jaymiller-cmg/dealsync-mcp-server",
+  "title": "DealSync — Shared Deal Room for LOs and Realtors",
+  "description": "Shared deal room where Loan Officers and Realtors track leads from conversation to closing.",
+  "repository": {
+    "url": "https://github.com/jaymiller-cmg/dealsync-mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "websiteUrl": "https://dealsync.me",
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://dealsync-mcp-server.jaymiller.workers.dev/sse"
+    }
+  ]
+}
