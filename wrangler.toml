@@ -1,0 +1,13 @@
+name = "dealsync-mcp-server"
+main = "src/index.ts"
+compatibility_date = "2025-03-14"
+compatibility_flags = ["nodejs_compat"]
+
+[durable_objects]
+bindings = [
+  { name = "MCP_OBJECT", class_name = "DealSyncMCPServer" }
+]
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["DealSyncMCPServer"]
